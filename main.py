@@ -10,6 +10,6 @@ def run_bot_loop():
         for signal in signals:
             print("Sending signal:", signal)
             send_telegram_message(signal)
-        time.sleep(60)
+        time.sleep(30)
 
 threading.Thread(target=run_bot_loop, daemon=True).start()
